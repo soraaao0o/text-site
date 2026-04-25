@@ -1,17 +1,35 @@
-<h2>名前変換</h2>
-<input type="text" id="nameInput" placeholder="デフォルト名:ネオン">
-<button onclick="saveName()">反映</button>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+body {
+  font-size: 18px;
+  line-height: 1.8;
+  padding: 16px;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
 }
 </style>
 
+</head>
+
+<body>
+
+<h2>名前変換</h2>
+<input type="text" id="nameInput" placeholder="デフォルト名:ネオン">
+<button onclick="saveName()">反映</button>
+
 <h2>long</h2>
 <ul>
-　<li><a href="long04calat.html">0.4カラットの存在証明</a></li>
+  <li><a href="long04calat.html">0.4カラットの存在証明</a></li>
 </ul>
 
 <h2>short</h2>
@@ -27,6 +45,9 @@ function saveName() {
   localStorage.setItem("playerName", name);
 }
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
