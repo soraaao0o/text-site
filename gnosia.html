@@ -13,19 +13,11 @@
 </ul>
 
 <script>
-let originalText;
-
-window.onload = function() {
-  originalText = document.body.innerHTML;
-  convertName();
-};
-
-function convertName() {
+function saveName() {
   let name = document.getElementById("nameInput").value;
   if (!name) name = "ネオン";
 
-  let text = originalText.replace(/〇/g, name);
-  document.body.innerHTML = text;
+  localStorage.setItem("playerName", name);
 }
 </script>
 
