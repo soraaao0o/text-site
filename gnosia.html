@@ -1,5 +1,5 @@
 <h2>名前変換</h2>
-<input type="text" id="nameInput" placeholder="名前を入力（デフォルト：ネオン）">
+<input type="text" id="nameInput" placeholder="ネオン">
 <button onclick="convertName()">反映</button>
 
 <h2>long</h2>
@@ -11,3 +11,24 @@
 <ul>
   <li><a href="short1.html">イレギュラーに祈りを捧げよ</a></li>
 </ul>
+
+<script>
+let originalText;
+
+window.onload = function() {
+  originalText = document.body.innerHTML;
+  convertName();
+};
+
+function convertName() {
+  let name = document.getElementById("nameInput").value;
+  if (!name) name = "ネオン";
+
+  let text = originalText.replace(/〇/g, name);
+  document.body.innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
