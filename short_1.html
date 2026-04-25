@@ -1,3 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  font-size: 18px;
+  line-height: 1.8;
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+</style>
+
+</head>
+
+<body>
+
 <p id="novel" style="white-space: pre-wrap;">
 　シピがまだメインコンソールに来ていない。集まった面々を見回したセツがそう言って、「起こしてくるよ」と声をかけたのは自分だった。議論が始まるまではもう少し時間があるが、そう余裕があるわけでもない。目的の部屋に向かう足取りは小走りだった。
 　シピは寝るのが好きだ。真っ当な大人らしい言動を整えてはいるがよく見ていると議論中に大きな口であくびをしている時もあるし、議論に集合するよう声をかけられて「もうちょい寝たいからパス」と自由気ままな発言をする時もある。とはいえ、彼が本当の本当に欠席間近まで寝ているのが珍しいのもまた事実だった。
@@ -67,7 +90,6 @@ window.addEventListener("DOMContentLoaded", function() {
   if (!name) name = "ネオン";
 
   let novel = document.getElementById("novel");
-
   novel.innerHTML = novel.innerHTML.replace(/○/g, name);
 });
 </script>
