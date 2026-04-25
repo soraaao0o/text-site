@@ -73,19 +73,17 @@
 <a href="long04carat.html">← 目次へ戻る</a>
 
 <script>
-let originalText;
-
 window.onload = function() {
-  originalText = document.body.innerHTML;
   convertName();
 };
 
 function convertName() {
-  let name = document.getElementById("nameInput").value;
+  let name = localStorage.getItem("playerName");
   if (!name) name = "ネオン";
 
-  let text = originalText.replace(/○/g, name);
-  document.body.innerHTML = text;
+  let novel = document.getElementById("novel");
+
+  novel.innerHTML = novel.innerHTML.replace(/○/g, name);
 }
 </script>
 
