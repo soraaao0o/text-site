@@ -26,22 +26,40 @@ h1 {
   margin: 0 auto;
 }
 
-/* リンクリスト */
+/* 見出し・説明中央寄せ */
+h2, .note {
+  text-align: center;
+}
+
+/* リンクリスト（横並び） */
 .links {
   list-style: none;
   padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
 }
 
+/* 各リンク */
 .links li {
-  margin-bottom: 10px;
-}
-
-.note {
   font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
 }
 
+/* スラッシュ区切り */
+.links li::after {
+  content: "/";
+  margin-left: 8px;
+  color: #aaa;
+}
+
+/* 最後のスラッシュ削除 */
+.links li:last-child::after {
+  content: "";
+}
+
+/* 通常リンク */
 a {
   color: black;
   text-decoration: none;
@@ -51,6 +69,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* 戻るボタン */
 .back {
   text-align: center;
   margin-top: 50px;
@@ -77,7 +96,6 @@ a:hover {
 
 <h2>thanks</h2>
 
-
 <ul class="links">
   <li>
     <a href="https://nanos.jp/pencilwhite/" target="_blank" rel="noopener noreferrer">白鉛筆</a>
@@ -99,7 +117,7 @@ a:hover {
   </li>
   <li>
     <a href="https://girl.fem.jp/ism/" target="_blank" rel="noopener noreferrer">alkalism</a>
-　</li>
+  </li>
 </ul>
 
 <p class="back"><a href="index.html">←戻る</a></p>
