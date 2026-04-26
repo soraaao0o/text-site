@@ -4,7 +4,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="robots" content="noindex, nofollow, noarchive">
@@ -16,11 +15,38 @@ body {
   padding: 16px;
 }
 
+/* タイトル（スマホで大きすぎないよう調整） */
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* 説明文 */
+p {
+  margin-bottom: 20px;
+}
+
+/* リスト */
 ul {
   list-style: none;
   padding-left: 0;
 }
-  
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* リンク */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 戻るボタン（控えめ） */
 .back {
   margin-top: 40px;
   font-size: 14px;
@@ -53,7 +79,7 @@ ul {
   <li><a href="long04carat_4.html">4話</a></li>
 </ul>
 
-<a href="gnosia.html">← 戻る</a>
+<p class="back"><a href="gnosia.html">← 戻る</a></p>
 
 </body>
 </html>
