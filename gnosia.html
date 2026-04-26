@@ -3,7 +3,6 @@
 
 <head>
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -13,11 +12,20 @@ body {
   padding: 16px;
 }
 
+/* リスト */
 ul {
   list-style: none;
   padding-left: 0;
 }
 
+/* キャラ名（控えめ表示） */
+.chara {
+  color: #666;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+/* 戻るリンク */
 .back {
   margin-top: 40px;
   font-size: 14px;
@@ -31,7 +39,6 @@ ul {
 .back a:hover {
   text-decoration: underline;
 }
-  
 </style>
 
 </head>
@@ -44,12 +51,18 @@ ul {
 
 <h2>long</h2>
 <ul>
-  <li><a href="long04calat.html">0.4カラットの存在証明</a></li>
+  <li>
+    <a href="long04calat.html">0.4カラットの存在証明</a>
+    <span class="chara">ラキオ</span>
+  </li>
 </ul>
 
 <h2>short</h2>
 <ul>
-  <li><a href="short_1.html">朝までエスコート</a></li>
+  <li>
+    <a href="short_1.html">朝までエスコート</a>
+    <span class="chara">シピ</span>
+  </li>
 </ul>
 
 <p class="back"><a href="text.html">←戻る</a></p>
@@ -62,9 +75,6 @@ function saveName() {
   localStorage.setItem("playerName", name);
 }
 </script>
-
-</body>
-</html>
 
 </body>
 </html>
