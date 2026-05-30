@@ -1,3 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+  
+
+<style>
+body {
+ font-size: 18px;
+  line-height: 1.8;
+  padding: 16px;
+
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<p id="novel" style="white-space: pre-wrap;">
 　映画を観よう、とセツに声をかけたのは、あるループで議論が終わった後の自由時間のことだった。
 　D.Q.O.には宇宙船とは思えないほど様々な娯楽が用意されている。ビリヤード台にレトロゲーム、カードゲームまで揃っている娯楽室。体を鍛えるためのトレーニングマシンが並んでいるジム。そして、様々な映像を投影して、映画鑑賞なんかも楽しめる展望ラウンジ。
 　セツと映画を観るのはこれが初めてではない。以前終わりの見えないループに疲れた顔をしていたセツに声をかけ、一緒に議論を放ったらかして釣りを楽しんで以来、私は定期的にセツを遊びに誘うようになった。勿論釣りをした時のように話し合いをサボることはしないものの、自由時間に議論の内容や「鍵」の情報収集について色々考え込んでいる様子の彼と自由時間を使って息抜きをした。希望的観測が入っているかもしれないが、そうやって一緒に遊ぶようになってからセツの顔色は心なしか良くなっているように思う。
@@ -88,3 +115,19 @@
 　初めに目を覚ました時、私の手をとってくれたのがセツで良かった。
 　天文学的な確率で果たした彼との出会いを喜ばしく思いながら、銀河の片隅で交わされたささやかな約束を胸の奥で抱きしめていた。
 
+
+
+<a href="long04calat.html">← 目次へ戻る</a>
+
+<script>
+window.addEventListener("DOMContentLoaded", function() {
+  let name = localStorage.getItem("playerName");
+  if (!name) name = "ネオン";
+
+  let novel = document.getElementById("novel");
+  novel.innerHTML = novel.innerHTML.replace(/○/g, name);
+});
+</script>
+
+</body>
+</html>
